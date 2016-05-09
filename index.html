@@ -6,20 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
 <title>CreativeWorks</title>
 </head>
 
@@ -30,9 +16,9 @@
 	<div class="wrapper">
     	<div class="row">
             <figure class="col-1-6">       
-                <img src="img/logo.png" alt="creativeworks logo">
+                <a href="#"><img src="img/logo.png" alt="creativeworks logo"></a>
             </figure>
-            <nav class="col-3-5 push-right txt-uppercase" id="smooth-scroll"> 
+            <nav class="col-3-5 push-right" id="smooth-scroll"> 
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#services">Our Services</a></li>
@@ -41,7 +27,7 @@
             </nav>
         </div>
         <div class="row p-t-lg p-b-lg">
-        	<div class="col-1-2 center-block txt-uppercase txt-center">
+        	<div class="col-1-2 center-block">
             	<h1>Good ideas come First!</h1>
             </div>
         </div>
@@ -51,58 +37,64 @@
 <!-- ===========OUR SERVICES=============== -->
 
 <section class="p-t-lg p-b-xl" id="services">
-	<header class="wrapper">
-    	<div class="row txt-center">
+	<div class="wrapper">
+    	<div class="row">
         	<div class="col-9-12 center-block">
-            	<h2 class=" txt-uppercase">Our Services</h2>
-                <p class="lead txt-uppercase">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>
+            	<header>
+            		<h2>Our Services</h2>
+                </header>
+                <p id="lead">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>
                 <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, & indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
             </div>
         </div>
-        <div class="row txt-center">
+        <div class="row">
         	<section class="col-1-4">
             	<div>
                     <header>
-                        <h3 class="txt-uppercase">Researching</h3>
+                        <h3>Researching</h3>
                     </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et.</p>
                 </div>
             </section>
             <section class="col-1-4">
             	<div>
-                    <h3 class="txt-uppercase">Design</h3>
+                	<header>
+                    	<h3>Design</h3>
+                    </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et.</p>
                 </div>
             </section>
             <section class="col-1-4">
             	<div>
                     <header>
-                        <h3 class="txt-uppercase">Development</h3>
+                        <h3>Development</h3>
                     </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et.</p>
                 </div>
             </section>
             <section class="col-1-4">
             	<div>
-                    <h3 class="txt-uppercase">Launch</h3>
+                	<header>
+                    	<h3>Launch</h3>
+                    </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. Ea cum diam malorum vivendum.</p>
                 </div>
             </section>
         </div>
-    </header>
+    </div>
 </section>
 
 
 <footer class="p-t-lg p-b-lg" id="contact">
-	<header class="wrapper">
-    	<div class="row txt-center">
+	<div class="wrapper">
+    	<div class="row">
         	<div class="col-9-12 center-block">
-            	<h2 class=" txt-uppercase">Contact Us</h2>
-                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+            	<h2>Contact Us</h2>
+                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et.</p>
             </div>
         </div>
         <div class="row">
-        	<section class="col-1-2">
+        	<div class="col-1-2 sm-1">
             	<div class="row">
                     <div class="col-1-2">
                     	<h3>Address</h3>
@@ -123,8 +115,8 @@
                     <div class="col-1-2" id="map">
                     </div>
                 </div>
-            </section>
-            <div class="col-1-2 p-t-lg">
+            </div>
+            <div class="col-1-2 p-t-lg sm-1">
                 <form class="row">
                 	<div class="col-1-2">
                     <label>First & Last Name:</label>
@@ -132,19 +124,19 @@
                     </div>
                     <div class="col-1-2">
                         <label>Your email:</label>
-                        <input name="email" type="text" placeholder="Email" />
+                        <input name="email" type="text" placeholder="Email"/>
                     </div>
                     <div class="col-1">
                         <label for="message">Your message:</label>
                         <textarea id="message" name="message" rows="7" placeholder="Message"></textarea>
-                        <div class="txt-center">
+                        <div>
                             <a href="#">Submit</a>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-    </header>
+    </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
@@ -173,6 +165,18 @@ jQuery(document).ready(function($){
 	
 });
 </script>
-
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </body>
 </html>
